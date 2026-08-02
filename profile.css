@@ -304,8 +304,35 @@ nav {
     color: #586069;
     margin-bottom: 1.5rem;
 }
-
-
+.project-head
+{
+    display: flex;
+    justify-content: space-between;
+}
+.arrow-down {
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background-color:#dcddde;
+    position: relative; 
+}
+.arrow-down:after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    border-right: 3px solid #000000;
+    border-bottom: 3px solid #040404;
+    rotate: 45deg;
+    width: 8px;
+    height: 8px;
+}
+.project-overview
+{
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid #e1e4e8;
+}
 /* --- Contact Section --- */
 #contact .contact-form{
     max-width: 800px;
@@ -445,5 +472,8 @@ footer {
 
     #contact .contact-form {
         grid-template-columns: 1fr;
+    }
+    .arrow-down{
+        width: 70px;
     }
 }

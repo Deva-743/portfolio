@@ -132,12 +132,30 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-info">
-                        <h4>Event Registration Management System</h4>
+                        <div class="project-head">
+                            <h4>Event Registration Management System</h4>
+                            <div class="arrow-down" onclick="drop(this)"></div>
+                        </div>
                         <p>
-                            Developed a Event Registration Management System using HTML,CSS, JS, JSP and MySQL.
-                            The application allows users to register the department associative events
-                            user-friendly interface.
+                            The application allows users to register for departmental events
+                            with a user-friendly interface.
                         </p>
+                        <div class="project-overview" style="display: none;">
+                            <h4>Overview</h4>
+                            <p>
+                                This project involves developing a web-based event registration management
+                                system for managing and organizing departmental events.
+                                It includes features for user registration, event browsing, and management.
+                            </p>
+                            <h4>Technologies Used</h4>
+                            <div class="skill-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">JSP</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -170,27 +188,28 @@
                         <p>+917305363719</p>
                     </div>
                 </div>
-                <a href="https://www.linkedin.com/in/devarajan25?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
+                <a href="https://www.linkedin.com/in/devarajan25?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                    target="_blank">
                     <div class="contact-det">
-                    <div class="icon">
+                        <div class="icon">
 
+                        </div>
+                        <div class="contact-info">
+                            <h3>LinkedIn</h3>
+                            <p>Devarajan A</p>
+                        </div>
                     </div>
-                    <div class="contact-info">
-                        <h3>LinkedIn</h3>
-                        <p>Devarajan A</p>
-                    </div>
-                </div>
                 </a>
                 <a href="https://github.com/Deva-743" target="_blank">
                     <div class="contact-det">
-                    <div class="icon">
+                        <div class="icon">
 
+                        </div>
+                        <div class="contact-info">
+                            <h3>GitHub</h3>
+                            <p>Deva-743</p>
+                        </div>
                     </div>
-                    <div class="contact-info">
-                        <h3>GitHub</h3>
-                        <p>Deva-743</p>
-                    </div>
-                </div>
                 </a>
             </div>
         </div>
@@ -203,18 +222,7 @@
         </div>
     </footer>
 
-    <script>
-        // Close mobile nav when a link is clicked on small screens
-        document.querySelectorAll('.nav-links a').forEach(function (link) {
-            link.addEventListener('click', function () {
-                if (window.matchMedia('(max-width: 768px)').matches) {
-                    var nav = document.querySelector('.nav-links');
-                    var menu = document.querySelector('.menu');
-                    if (nav) nav.classList.remove('open');
-                    if (menu) menu.classList.remove('open');
-                }
-            });
-        });
+    <script src="profile.js"></script>
     </script>
 
 </body>
