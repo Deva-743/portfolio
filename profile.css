@@ -182,7 +182,9 @@ nav {
     font-size: 3.5rem;
     line-height: 1.2;
 }
-
+.home-text p{
+    text-align:justify;
+}
 .home-image-placeholder {
     flex: 1;
     display: flex;
