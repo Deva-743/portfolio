@@ -225,7 +225,30 @@ nav {
     gap: 1rem;
     margin-top: 2rem;
 }
-
+.contact-icons
+{
+    padding-top: 2rem;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+.contact-icons :nth-child(1) .icon:hover{
+    transform: translateY(-4px);
+    color: rgb( 234, 67, 53);
+    border: 1px solid rgb( 234, 67, 53);
+    
+}
+.contact-icons :nth-child(2) .icon:hover{
+    transform: translateY(-4px);
+    color: #4285F4 ;
+    border: 1px solid #4285F4 ;
+}
+.contact-icons :nth-child(3) .icon:hover{
+    transform: translateY(-4px);
+    color: #34A853 ;
+    border: 1px solid #34A853 ;
+}
 /* --- About Me Section --- */
 #about .about-content {
     display: grid;
@@ -423,21 +446,19 @@ nav {
     transition: 0.3s ease;
 }
 .icon {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e1e4e8;
+    background-color: #ffffff;
+    border: 1px solid rgb(227, 227, 227);
     border-radius: 50%;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .contact-det h3 {
     color: #6020ea;
     margin-bottom: 0.3rem;
-}
-.contact-det:hover .icon {
-    border: 1px solid #6020ea;
 }
 /* --- Footer --- */
 footer {
@@ -570,7 +591,10 @@ footer {
     #contact .contact-form {
         grid-template-columns: 1fr;
     }
-
+    .contact-icons
+    {
+        justify-content: center;
+    }
     .arrow-down {
         width: 70px;
     }
