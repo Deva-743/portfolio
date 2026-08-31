@@ -503,7 +503,7 @@ footer {
 
 @media (max-width: 768px) {
     header {
-        top: 30px;
+        top: 0;
     }
 
     #skills .skills-grid {
